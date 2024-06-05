@@ -1,0 +1,20 @@
+				 MINNA
+Địa chỉ:   	 Số 8, Nguyên Xá, Minh Khai, Bắc Từ Liêm, Hà Nội
+Điện thoại:	 0389247621
+Ngày:      	19/04/2022
+
+				 PHIẾU THANH TOÁN
+Số hóa đơn:	11
+Khách hàng:	Phạm Thị Hoan
+Điểm tích lũy:	2507900.0
+Điện thoại:	0882375890
+
+Tên hàng                                  Số lượng             Đơn giá          Khuyến mại          Thành tiền
+Áo cotton cổ tim                                 2            250000.0                 8.0            460000.0
+Áo len nam                                       1            320000.0                12.0            281600.0
+Đầm voan bèo vai                                 1            495000.0                10.0            445500.0
+Áo sơ mi croptop                                 1            320000.0                 6.0            300800.0
+
+Tổng tiền hàng:    	1,635,000
+Khuyến mãi theo đơn: 	1,487,900
+Tổng phải trả:       	147,100
