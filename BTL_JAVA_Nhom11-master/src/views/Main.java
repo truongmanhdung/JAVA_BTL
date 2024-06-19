@@ -81,7 +81,7 @@ public class Main extends javax.swing.JFrame {
         homepageLabel.setBackground(new java.awt.Color(255, 255, 255));
         homepageLabel.setFont(new java.awt.Font("Cambria", 1, 16)); // NOI18N
         homepageLabel.setForeground(new java.awt.Color(255, 255, 255));
-        homepageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        homepageLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         homepageLabel.setText("TRANG CHỦ");
 
         javax.swing.GroupLayout home_pagePanelLayout = new javax.swing.GroupLayout(home_pagePanel);
@@ -89,8 +89,9 @@ public class Main extends javax.swing.JFrame {
         home_pagePanelLayout.setHorizontalGroup(
             home_pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(home_pagePanelLayout.createSequentialGroup()
-                .addComponent(homepageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addComponent(homepageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         home_pagePanelLayout.setVerticalGroup(
             home_pagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,9 +111,9 @@ public class Main extends javax.swing.JFrame {
         management_customerPanelLayout.setHorizontalGroup(
             management_customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, management_customerPanelLayout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
-                .addComponent(customerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(customerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         management_customerPanelLayout.setVerticalGroup(
             management_customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,17 +146,17 @@ public class Main extends javax.swing.JFrame {
 
         receptLabel.setFont(new java.awt.Font("Cambria", 1, 16)); // NOI18N
         receptLabel.setForeground(new java.awt.Color(255, 255, 255));
-        receptLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        receptLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         receptLabel.setText("QUẢN LÝ HÓA ĐƠN");
 
         javax.swing.GroupLayout management_receptPanelLayout = new javax.swing.GroupLayout(management_receptPanel);
         management_receptPanel.setLayout(management_receptPanelLayout);
         management_receptPanelLayout.setHorizontalGroup(
             management_receptPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(management_receptPanelLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(receptLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, management_receptPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(receptLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         management_receptPanelLayout.setVerticalGroup(
             management_receptPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -191,8 +192,8 @@ public class Main extends javax.swing.JFrame {
             management_accPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(management_accPanelLayout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(accLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(accLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         management_accPanelLayout.setVerticalGroup(
             management_accPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,8 +215,8 @@ public class Main extends javax.swing.JFrame {
             management_employeePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(management_employeePanelLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(employeeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(employeeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         management_employeePanelLayout.setVerticalGroup(
             management_employeePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,7 +262,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(management_employeePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(159, Short.MAX_VALUE))
         );
 
         containerPanel.setPreferredSize(new java.awt.Dimension(985, 670));

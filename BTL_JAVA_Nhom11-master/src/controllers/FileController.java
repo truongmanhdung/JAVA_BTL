@@ -143,7 +143,7 @@ public class FileController {
             fr= new FileReader(filename);
             br= new BufferedReader(fr);
             String line="";
-            while( (line=br.readLine())!=null ){
+            while((line = br.readLine()) != null){
                 String str[]= line.split(";");
                 customers.add(new Customer(Integer.parseInt(str[0]), str[1], str[2], Float.parseFloat(str[3])));
             }
@@ -244,7 +244,7 @@ public class FileController {
         //====================================================================================================================
         //File product
         
-         public static void writeProductToFile(String filename, product product){
+    public static void writeProductToFile(String filename, product product){
         try {
             fileWriter = new FileWriter(filename, true);
             bufWriter = new BufferedWriter(fileWriter);

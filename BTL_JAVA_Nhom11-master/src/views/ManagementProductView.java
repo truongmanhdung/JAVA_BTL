@@ -163,6 +163,11 @@ public class ManagementProductView extends javax.swing.JPanel {
         add(giamuaField, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 275, 35));
 
         idspField.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        idspField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idspFieldActionPerformed(evt);
+            }
+        });
         add(idspField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 275, 35));
 
         giagiamField.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -229,6 +234,11 @@ public class ManagementProductView extends javax.swing.JPanel {
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, -1, -1));
 
         searchField.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        searchField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchFieldActionPerformed(evt);
+            }
+        });
         searchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 searchFieldKeyReleased(evt);
@@ -322,12 +332,20 @@ public class ManagementProductView extends javax.swing.JPanel {
                 showErr.setText("Giá mua chỉ bao gồm số");
                 return;
             }
+            
+            if(Float.parseFloat(price) < Float.parseFloat(purchasePrice)){
+                showErr.setText("Giá mua phải nhỏ hơn giá bán");
+                return;
+            }
 
             showErr.setText(null);
+            
+            // khởi tạo đối tượng product mới truyền các giá trị vào contructor
             product product = new product(productId, productName, 
                                    Float.parseFloat(price), Float.parseFloat(purchasePrice), 
                                    Float.parseFloat(discount), Integer.parseInt(quantity));
 
+            // hàm thêm sản phẩm vào file
             FileController.writeProductToFile("product.txt", product);
             tableModal.addRow(new Object[]{
                 product.getmaSP(), product.getTenSP(), numberFormat.format(product.getGiaBan()), numberFormat.format(product.getGiaMua()), 
@@ -354,6 +372,63 @@ public class ManagementProductView extends javax.swing.JPanel {
         Float giamGia = Float.parseFloat(giagiamField.getText().trim());
         Integer soLuong = Integer.parseInt(soluongField.getText().trim());
         int row = productTable.getSelectedRow();
+        
+        String productName = tenspField.getText().trim();
+        String price = giabanField.getText().trim();
+        String purchasePrice = giamuaField.getText().trim();
+        String discount = giagiamField.getText().trim();
+        String quantity = soluongField.getText().trim();
+
+        if (productName.compareTo("") == 0) {
+            showErr.setText("Vui lòng nhập tên sản phẩm");
+            return;
+        }
+
+        String isNumbber = "^\\d+$";
+        Pattern patternNumber = Pattern.compile(isNumbber);
+        if (price.compareTo("") == 0) {
+            showErr.setText("Vui lòng nhập giá mua");
+            return;
+        }
+        Matcher matchPrice = patternNumber.matcher(price);
+        if(!matchPrice.matches()){
+            showErr.setText("Giá mua chỉ bao gồm số");
+            return;
+        }
+        if (purchasePrice.compareTo("") == 0) {
+            showErr.setText("Vui lòng nhập giá bán");
+            return;
+        }
+        Matcher matchPurP = patternNumber.matcher(price);
+        if(!matchPurP.matches()){
+            showErr.setText("Giá mua chỉ bao gồm số");
+            return;
+        }
+        if (discount.compareTo("") == 0) {
+            showErr.setText("Vui lòng nhập giảm giá");
+            return;
+        }
+        Matcher matchDiscount = patternNumber.matcher(price);
+        if(!matchDiscount.matches()){
+            showErr.setText("Giảm giá chỉ bao gồm số");
+            return;
+        }
+        if (quantity.compareTo("") == 0) {
+            showErr.setText("Vui lòng nhập số lượng");
+            return;
+        }
+        Matcher matchQuantity = patternNumber.matcher(price);
+        if(!matchQuantity.matches()){
+            showErr.setText("Giá mua chỉ bao gồm số");
+            return;
+        }
+
+        if(Float.parseFloat(price) < Float.parseFloat(purchasePrice)){
+            showErr.setText("Giá mua phải nhỏ hơn giá bán");
+            return;
+        }
+
+        showErr.setText(null);
 
         // update data in file
         product product = new product(maSP, tenSP, giaBan, giaMua, giamGia, soLuong);
@@ -377,7 +452,7 @@ public class ManagementProductView extends javax.swing.JPanel {
     }//GEN-LAST:event_suajButtonActionPerformed
 
     private void xoajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xoajButtonActionPerformed
-        // TODO add your handling code here:
+            // TODO add your handling code here:
         int answer = JOptionPane.showConfirmDialog(null, "Bạn có chắc muốn xóa sản phẩm này?", "Xác nhận", JOptionPane.YES_NO_OPTION, 0);
         if (answer == 0) {
             int row = productTable.getSelectedRow();
@@ -433,6 +508,14 @@ public class ManagementProductView extends javax.swing.JPanel {
     private void tenspFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tenspFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tenspFieldActionPerformed
+
+    private void searchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchFieldActionPerformed
+
+    private void idspFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idspFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idspFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

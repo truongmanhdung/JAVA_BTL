@@ -2,3 +2,4 @@
 5|nguyenmoi123|123456789|employee
 6|admin123|123123|admin
 7|theanh|123123|employee
+8|hieu123|123123|employee

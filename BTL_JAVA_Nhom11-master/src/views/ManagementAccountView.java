@@ -112,6 +112,12 @@ public class ManagementAccountView extends javax.swing.JPanel {
         idLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         idLabel.setText("Mã tài khoản");
         add(idLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+
+        idField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idFieldActionPerformed(evt);
+            }
+        });
         add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 275, 35));
 
         usernameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -164,6 +170,11 @@ public class ManagementAccountView extends javax.swing.JPanel {
         roleComboBox.setEditable(true);
         roleComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Employee" }));
         roleComboBox.setMinimumSize(new java.awt.Dimension(64, 40));
+        roleComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roleComboBoxActionPerformed(evt);
+            }
+        });
         add(roleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 175, 275, 35));
 
         accountTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -420,6 +431,14 @@ public class ManagementAccountView extends javax.swing.JPanel {
         idField.setText(accountID.toString());
         utils.setBgButtonNull(addBtn, editBtn, deleteBtn);
     }//GEN-LAST:event_formMouseClicked
+
+    private void idFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idFieldActionPerformed
+
+    private void roleComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roleComboBoxActionPerformed
 
     private void validateField(String name, String value) {
             switch (name) {

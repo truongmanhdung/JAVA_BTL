@@ -157,7 +157,7 @@ public class ManagementEmployeeView extends javax.swing.JPanel {
             tblEmployee.getColumnModel().getColumn(5).setResizable(false);
         }
 
-        employeePanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 870, 260));
+        employeePanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 870, 280));
 
         addBtn.setBackground(new java.awt.Color(116, 213, 128));
         addBtn.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

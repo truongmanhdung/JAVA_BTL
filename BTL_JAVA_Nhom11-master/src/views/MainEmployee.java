@@ -136,10 +136,10 @@ public class MainEmployee extends javax.swing.JFrame {
 
         sidebarPanel.add(management_receptPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 356, 277, -1));
 
-        jLabel1.setFont(new java.awt.Font("Agency FB", 1, 52)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("MINNA SHOP");
-        sidebarPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        sidebarPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 310, 70));
 
         logoutBtn.setBackground(new java.awt.Color(255, 153, 51));
         logoutBtn.setFont(new java.awt.Font("Cambria", 0, 16)); // NOI18N
@@ -171,7 +171,7 @@ public class MainEmployee extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(sidebarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(containerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
