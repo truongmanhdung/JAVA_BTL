@@ -101,8 +101,8 @@ public class PrintBill extends javax.swing.JFrame {
             fw = new FileWriter(filename, false);
             bw = new BufferedWriter(fw);
             bw.write("\t\t\t\t MINNA"); 
-            bw.write("\nĐịa chỉ:   \t Số 8, Nguyên Xá, Minh Khai, Bắc Từ Liêm, Hà Nội"); 
-            bw.write("\nĐiện thoại:\t 0389247621"); 
+            bw.write("\nĐịa chỉ:   \t Số 8, Trần Quốc Vượng, Cầu Giấy, Hà Nội"); 
+            bw.write("\nĐiện thoại:\t 0365727226"); 
             bw.write("\nNgày:      \t" + date.getText());
 
             bw.write("\n\n\t\t\t\t PHIẾU THANH TOÁN"); 
@@ -233,15 +233,15 @@ public class PrintBill extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Tổng tiền hàng: ");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 640, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel12.setText("Tổng phải trả");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 700, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 680, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Khuyễn mãi theo đơn: ");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 670, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 650, -1, -1));
 
         orderDetailNumber.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         orderDetailNumber.setText("gg");
@@ -261,15 +261,15 @@ public class PrintBill extends javax.swing.JFrame {
 
         totalProduct.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         totalProduct.setText("gg");
-        getContentPane().add(totalProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 630, 200, 35));
+        getContentPane().add(totalProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 610, 200, 35));
 
         promotion.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         promotion.setText("ggg");
-        getContentPane().add(promotion, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 660, 200, 35));
+        getContentPane().add(promotion, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 640, 200, 35));
 
         totalMoney.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         totalMoney.setText("ggg");
-        getContentPane().add(totalMoney, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 690, 200, 40));
+        getContentPane().add(totalMoney, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 670, 200, 40));
 
         jLabel10.setFont(new java.awt.Font("Agency FB", 1, 52)); // NOI18N
         jLabel10.setText("MINNA SHOP");
@@ -285,7 +285,7 @@ public class PrintBill extends javax.swing.JFrame {
                 btnPrintActionPerformed(evt);
             }
         });
-        getContentPane().add(btnPrint, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 760, -1, -1));
+        getContentPane().add(btnPrint, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 730, 110, -1));
 
         closeBtn.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         closeBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -293,7 +293,7 @@ public class PrintBill extends javax.swing.JFrame {
                 closeBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(closeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 40, 40));
+        getContentPane().add(closeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 40, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

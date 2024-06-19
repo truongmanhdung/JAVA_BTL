@@ -31,4 +31,4 @@
 31;Hoàng Đăng Dương;0385439740;0.0
 32;Bùi Đình Huy;0966614730;0.0
 33;Lê Ngọc Minh Hải;0928399607;0.0
-34;Truong Manh Dung;0365727226;0.0
+34;Truong Manh Dung;0365727226;2557800.0
